@@ -6,7 +6,7 @@ import { IUser, UserRolesEnum, UserStatus } from '../interfaces/User'
 
 const dbDataLocation = {
 	dataSource: 'Teste-01',
-	database: 'api',
+	database: 'income',
 	collection: 'users',
 }
 

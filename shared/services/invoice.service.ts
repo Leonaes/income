@@ -5,7 +5,7 @@ import { IInvoice } from '../interfaces/Invoice'
 
 const dbDataLocation = {
 	dataSource: 'Teste-01',
-	database: 'api',
+	database: 'income',
 	collection: 'invoices',
 }
 
