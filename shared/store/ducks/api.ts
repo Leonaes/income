@@ -21,7 +21,7 @@ export const { Types, Creators }: IActionsFromCreators<IAPIActionCreators> =
  */
 
 const INITIAL_STATE: IAPI = {
-	url: 'https://data.mongodb-api.com/app/data-vrosc/endpoint/data/beta',
+	url: 'https://data.mongodb-api.com/app/data-bdkvk/endpoint/data/beta',
 	type: 'DEV',
 }
 
@@ -31,11 +31,11 @@ const setProd = (state = INITIAL_STATE, action: any): IAPI => ({
 })
 
 const setDev = (state = INITIAL_STATE, action: any): IAPI => ({
-	url: 'https://data.mongodb-api.com/app/data-vrosc/endpoint/data/beta',
+	url: 'https://data.mongodb-api.com/app/data-bdkvk/endpoint/data/beta',
 	type: 'DEV',
 })
 const setLocal = (state = INITIAL_STATE, action: any): IAPI => ({
-	url: 'http://localhost:19999',
+	url: 'https://data.mongodb-api.com/app/data-bdkvk/endpoint/data/beta',
 	type: 'LOCAL',
 })
 
