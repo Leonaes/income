@@ -4,7 +4,7 @@ import { toasterShowMessage } from '../util/toaster'
 import { IInvoice } from '../interfaces/Invoice'
 
 const dbDataLocation = {
-	dataSource: 'Cluster0',
+	dataSource: 'Teste-01',
 	database: 'api',
 	collection: 'invoices',
 }

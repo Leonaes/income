@@ -5,10 +5,14 @@ import { toasterShowMessage } from '../util/toaster'
 import { IUser, UserRolesEnum, UserStatus } from '../interfaces/User'
 
 const dbDataLocation = {
-	dataSource: 'Cluster0',
+	dataSource: 'Teste-01',
 	database: 'api',
 	collection: 'users',
 }
+
+/* dataSource: 'Cluster0',
+	database: 'api',
+	collection: 'users', */
 
 export interface ICreateUserPayload {
 	name: string
