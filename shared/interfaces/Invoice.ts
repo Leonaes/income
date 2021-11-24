@@ -6,7 +6,7 @@ export interface IInvoice {
 	invoiceCode: string
 	client: string
 	clientFinancialManager: string
-	clientEmail: string
+	clientEmail: string[]
 	value: number
 	currency: CurrencyEnum
 	date: Date

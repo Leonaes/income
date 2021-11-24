@@ -21,7 +21,7 @@ export async function getInvoices(
 	const {
 		userId,
 		search = '',
-		sortField = 'invoiceCode',
+		sortField = 'date',
 		sortDirection = 1,
 	} = payload
 	updateAxiosInstanceApi()
