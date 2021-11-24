@@ -8,6 +8,7 @@ import { getInvoices } from '../../shared/services/invoice.service'
 import ScreenWrapper from '../ScreenWrapper'
 import { InvoicesContainerWrapper, InvoicesWrapper } from './styles'
 import { FlatList } from 'react-native-gesture-handler'
+import InputSearch from '../../shared/components/InputSearch'
 
 function Invoices(): JSX.Element {
 	const { user } = useTypedSelector(['user'])
@@ -33,10 +34,11 @@ function Invoices(): JSX.Element {
 	function renderInvoices(): JSX.Element {
 		return (
 			<InvoicesWrapper>
+				<InputSearch label="Search invoce"/>
 				{invoices.length > 0 ? (
 					<FlatList
 						data={invoices}
-						renderItem={({ item }) => <View>{item.invoiceCode}</View>}
+						renderItem={({ item }) => <View><Text>{item.invoiceCode}</Text></View>}
 						keyExtractor={(invoice) => invoice._id}
 					/>
 				) : (

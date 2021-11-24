@@ -80,7 +80,7 @@ function InputSearch({
 			/>
 
 			<View style={styles.SearchIconWrapper}>
-				<Search width={16} height={16} style={styles.SearchIcon} />
+				<Search width={16} height={16} /* style={styles.SearchIcon}*/ />
 			</View>
 		</Animated.View>
 	)
