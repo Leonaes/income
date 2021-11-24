@@ -10,6 +10,11 @@ import { InvoicesContainerWrapper, InvoicesWrapper } from './styles'
 import { FlatList } from 'react-native-gesture-handler'
 import InputSearch from '../../shared/components/InputSearch'
 
+import Card from '../../shared/components/Card'
+
+
+
+
 function Invoices(): JSX.Element {
 	const { user } = useTypedSelector(['user'])
 
@@ -44,6 +49,7 @@ function Invoices(): JSX.Element {
 				) : (
 					<Text>No Invoices Found</Text>
 				)}
+				<Card />
 			</InvoicesWrapper>
 		)
 	}
